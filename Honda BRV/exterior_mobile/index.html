@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Honda BR-V - Exterior 360</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="images/spritespin.js"></script>
+  <meta charset="utf-8">
+  <style type="text/css">
+  body {background-color:transparent}
+.exterior_rotate_section{width:100%; float:left; text-align:center;}
+.exterior_car{width:62%; float:left; text-align:left;}
+.ex_line{width:250px; height:13px; background:url(images/ex_rotate_line_mobile.png) no-repeat; margin:auto; position:relative;}
+.ex_circle{width:20px; height:19px; background:url(images/ex_rotate_circle_mobile.png) no-repeat; position:absolute; left:50%; margin-left:-15px; cursor:pointer;}
+
+
+  </style>
+  </head>
+  <body>
+  <table width="250" height="200" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="middle">
+      <div class="spritespin">
+      <script type="text/javascript">
+      	$('.spritespin').spritespin({
+        	source: SpriteSpin.sourceArray('images/{frame}.png', { frame: [1,36], digits: 2 }),
+        	width: 250,
+        	height: 109,
+        	sense: -1,
+        	renderer: 'image'
+      	});
+    </script>
+      </div>
+    
+      </td>
+    </tr>
+  </table>
+  
+  <div class="exterior_rotate_section">
+<div class="ex_line">
+
+<div class="ex_circle">
+
+</div>
+
+</div>
+
+
+
+</div>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			var spritewidth = $('.spritespin').width();
+			var coords = 0;
+			var isDraggable = false;
+			$(".spritespin").mousedown(function() {
+				isDraggable = true;
+			}).mousemove(function( event ) {
+				if(isDraggable) {
+					var pageCoords = event.pageX;
+					if(coords == 0) {
+						coords = event.pageX;
+					} else {
+						if(coords < pageCoords) {
+							if(parseFloat($('.ex_circle').css('left')) < 210) {
+								$('.ex_circle').css({left: '+=5px'});
+								coords = event.pageX;
+							}
+						} else {
+							if(parseFloat($('.ex_circle').css('left')) > 10) {
+								$('.ex_circle').css({left: '-=5px'});
+								coords = event.pageX;
+							}
+						}
+					}
+				}
+			}).mouseup(function() {
+				isDraggable = false;
+				$('.ex_circle').animate({left: '50%'}, 100);
+			}).mouseleave(function(){
+				isDraggable = false;
+				$('.ex_circle').animate({left: '50%'}, 100);
+			});
+		});
+	</script>
+  </body>
+</html>

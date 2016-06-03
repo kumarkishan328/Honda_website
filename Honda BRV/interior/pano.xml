@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="">
+  <input height="2005" levelingpitch="0" width="2005" leveltileurl="tiles/AMOL-FINAL-V_2_0/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" leveltilesize="510" levelbias="0.400" levelbiashidpi="0.400" levelingroll="0">
+    <level preload="0" height="2005" predecode="0" width="2005"/>
+    <level preload="0" height="1002" predecode="0" width="1002"/>
+    <level preload="1" height="501" predecode="1" width="501"/>
+    <preview color="0x808080" strip="1"/>
+  </input>
+  <view fovmode="0" pannorth="0">
+    <start pan="360" fov="70" tilt="0"/>
+    <min pan="0" fov="5" tilt="-90"/>
+    <max pan="360" fov="120" tilt="90"/>
+  </view>
+  <userdata copyright="" comment="" longitude="73.117626" author="" title="" datetime="2016:04:22 10:09:22" description="" info="" source="" tags="version-5|hotspots" latitude="21.566932"/>
+  <hotspots wordwrap="1" height="20" width="180">
+    <label textcolor="0x000000" background="1" wordwrap="1" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" width="180" bordercolor="0x000000" textalpha="1" borderalpha="1" borderradius="1" border="1"/>
+    <polystyle backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" mode="0" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+    <hotspot pan="-27.14" title="Tilt Steering" target="_self" url="images/tilt-stering.jpg" tilt="-13.25" description="" id="Point01" skinid="ht_image"/>
+    <hotspot pan="-19.77" title="Speedometer" target="" url="images/31032016---BR-V493536_R3-CMYK.jpg" tilt="-8.1" description="" id="Point02" skinid="ht_image"/>
+    <hotspot pan="2.23" title="Auto AC" target="_self" url="images/AC.jpg" tilt="-21.46" description="" id="Point03" skinid="ht_image"/>
+    <hotspot pan="0.74" title="Gear Shift- i-DTEC" target="_self" url="images/6--Speed-MT.jpg" tilt="-37.17" description="" id="Point04" skinid="ht_image"/>
+    <hotspot pan="-30.79" title="Push Start Button" target="_self" url="images/push-start.jpg" tilt="-16.91" description="" id="Point05" skinid="ht_image"/>
+    <hotspot pan="6.92" title="Blue Tooth and Audio - 2" target="_self" url="images/030416-Honda4507-OPTION-2.jpg" tilt="-12.79" description="" id="Point06" skinid="ht_image"/>
+    <hotspot pan="-170.43" title="2nd Row AC Vents" target="_self" url="images/010416-Honda-BRV4314-copy.jpg" tilt="57.18" description="" id="Point07" skinid="ht_image"/>
+    <hotspot pan="-13.53" title="Steering Mounted Audio Controls" target="_self" url="images/010416-Honda-BRV4251.jpg" tilt="-14.34" description="" id="Point08" skinid="ht_image"/>
+    <hotspot pan="34.32" title="Leather Seats" target="_self" url="images/Leather-With-Adjustable-Headrest.jpg" tilt="-46.27" description="" id="Point09" skinid="ht_image"/>
+    <hotspot pan="-0.37" title="Blue Tooth and Audio" target="_self" url="images/030416-Honda4507.jpg" tilt="-12.91" description="" id="Point10" skinid="ht_image"/>
+  </hotspots>
+  <media/>
+  <transition softedge="0" enabled="0" type="crossdissolve" zoomfov="20" blendtime="1" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomout="0" blendcolor="0x000000"/>
+  <autorotate delay="1.00" speed="0.100" startloaded="0" returntohorizon="1.000" useanimation="0"/>
+  <control speedwheel="1" hideabout="0" invertcontrol="1" dblclickfullscreen="1" contextfullscreen="1" lockedwheel="0" lockedkeyboard="0" sensitivity="8" simulatemass="1" lockedkeyboardzoom="0" lockedmouse="0" invertwheel="0">
+    <menulink url="http://amoljadhav.com/" text="Tour By : Amol Jadhav"/>
+  </control>
+</panorama>

@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+@font-face {font-family: "WordMean Font V1";
+  src: url("../fonts/6cbe245430dc134d2c12fafecf75d94c.eot"); /* IE9*/
+  src: url("../fonts/6cbe245430dc134d2c12fafecf75d94c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/6cbe245430dc134d2c12fafecf75d94c.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/6cbe245430dc134d2c12fafecf75d94c.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/6cbe245430dc134d2c12fafecf75d94c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/6cbe245430dc134d2c12fafecf75d94c.svg#WordMean Font V1") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'httpwhttpwordswithmeaning.org';
+    src: url('../fonts/wordmean_font-webfont.eot');
+    src: url('../fonts/wordmean_font-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wordmean_font-webfont.woff2') format('woff2'),
+         url('../fonts/wordmean_font-webfont.woff') format('woff'),
+         url('../fonts/wordmean_font-webfont.ttf') format('truetype'),
+         url('../fonts/wordmean_font-webfont.svg#httpwhttpwordswithmeaning.org') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+a img{border:0px;}
+.social a img{width:35px;}
+ section{width:100%; float:left;  }
+.homeimg{ width:100%; float:left; position:relative; height:700px;}
+.homeimg img{ width:100%;  top:0px; left:0px; position:absolute;}
+.skrollable .skrollable{ position:absolute;}
+.skrollable{ z-index:0;}
+.skrollable.unrendered{display:none !important;}
+
+
+.fancybox-skin{ background:none !important;}
+
+/*COMMON STYLE START HERE*/
+
+.black{color:#000 !important;}
+
+body{ padding:0px; margin:0px; width:100%; height:100%; background:#000;font-family:'Didact Gothic';  }
+h1{ font-size:24px; padding:10px; color:#fff;font-family: "WordMean Font V1"; letter-spacing:3px;}
+ul{margin:0px; padding:0px; list-style:none;}
+ul li{margin:0px; padding:0px; list-style:none;}
+a{text-decoration:none; color:#fff;}
+.floatleft{ float:left;}
+.floatright{ float:right;}
+
+/*WIDTH*/
+.width100{width:99%;}
+.width75{width:75%;}
+.width50{width:50%;}
+.width40{width:40%;}
+.width25{width:25%;}
+.width15{width:15%;}
+.width33{width:33.3%;}
+
+
+/*HEADER STYLE*/
+header {position:relative; border-top:4px solid #9e2525; width:100%; float:left; padding:20px 0px; z-index:2;}
+header.clone {position: fixed;top: -65px;left: 0;right: 0;z-index: 1;transition: 0.4s top cubic-bezier(.3, .73, .3, .74);}
+body.down header.clone {top: 0;background: rgba(0, 0, 0, .8) !important; z-index:10;}
+
+nav {width:73%; float:left; text-align:center;}
+nav ul{margin:0 auto; display:table;}
+nav li {float: left;display: inline-block; text-align:left; margin-right:3%;}
+nav li a {font-size:16px;color: #fff;padding:0px 0px 0px 0px;display: block; font-family:'Didact Gothic';}
+nav li a:hover {color: #fff; border-bottom:1px solid #9e2525;}
+.honda_logo{min-width:80px; width:13%; float:left; padding:0px 1%;}
+.honda_logo img{width:100%; max-width:150px;}
+.brv_logo{min-width:80px; width:12%; float:left; padding:0px 0px; text-align:right;}
+.brv_logo img{width:100%; max-width:150px;}
+.activemenu{border-bottom:2px solid #9e2525;}
+
+/*social*/
+.social{ position:fixed; top:84px; right:40px; width:150px; z-index:4;}
+.social a{ float:left; margin:0px 5px;}
+.social a:hover{opacity:.6;}
+
+/*BASIC LAYOUT STYLE*/
+#home{}
+#enquiryform{background:#becbd8 url(../images/designShape.png) no-repeat bottom right; border-top:10px solid #fff;}
+#slideGallery{background:#333; border-top:10px solid #fff;}
+#exterior{border-top:10px solid #fff;}
+#interior{background:#000;}
+#engine{background:#000;}
+#safety{background:#fff;}
+#grade{background:url(../images/bg1.jpg); }
+#accessories{background:#000;}
+#features{background:#000;}
+#specification{background:#000; height:auto !important;overflow:auto}
+#gallery{background:#000; overflow:hidden;}
+#hondaconnect{}
+
+/*________________________________________________ALL PAGE STYLE START HERE________________________________________________*/
+
+/*HONDA CONNECT PAGE STYLE*/
+.hondaconnect_hed{width:100%; float:left; padding:2% 0px; text-align:center;}
+.hondaconnect_hed h1{color:#000; font-size:52px;}
+.hondaconnect_content{width:50%; float:left; position:relative; text-align:center; padding:0px 25%;}
+.hondaconnect_content img{width:100%;}
+.knowmore{ background:#000; color:#fff; font-size:16px; padding:10px 10px; position:absolute; left:50%; margin-left:-50px; bottom:24%;}
+.bg2{ background:#fff url(../images/bg2.png) no-repeat; background-position:center center; background-size:cover;}
+
+.container {background-color: #000;-webkit-backface-visibility: hidden;	-moz-backface-visibility: hidden;-ms-backface-visibility: hidden;}
+.mainContent{width:100%; float:left; margin-top:80px;}
+
+/*HOME SECTION STYLE*/
+.hometxtArea{width:100%; float:left; padding:20px 0px; text-align:center; position:fixed; z-index:1;}
+.hometxtArea span{font-family: "WordMean Font V1"; color:#fff; font-size:52px; text-transform:uppercase; letter-spacing:3px; display:block;  
+ -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+/*SLIDE SECTION STYLE START*/
+.slideG{ width:20%; float:left; position:relative;overflow:hidden; height:600px;}
+.slideG img{width:100%; }
+.blackShade{ position:absolute; background:rgba(0,0,0,.5); width:100%; height:100%;color:#fff; cursor:pointer; z-index:2; top:0px; left:0px; text-align:center; padding-top:30%; opacity:1;}
+.blackShade:hover{color:#000;  }
+.whiteline{width:55px; height:4px; 
+    padding-bottom: 20px;
+    margin: auto;
+    border-top: 4px solid #eb212e;} 
+.txtsec span{font-family: "WordMean Font V1"; font-size:22px; letter-spacing:3px;  width:100%; padding:20px 0px; text-transform:uppercase; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.txtsec{width:50%; margin:50% 25%; text-align:center;}
+.slideG_content{ background:rgba(0,0,0,.7); height:600px; position:absolute;  left:0px; z-index:3; width:0px;overflow:hidden; }
+.slideG_inner{width:100%; overflow:hidden; text-align:center;}
+.closeSlide{ position:absolute; top:10px; right:10px; z-index:5;}
+.closeSlide img{height:25px;}
+
+
+/*ENQUIRY FORM STYLE START*/
+::-webkit-input-placeholder {font-size:10px; font-weight:normal; color:#626262; opacity:1; padding-left:10px;	}
+:-moz-placeholder {font-size:10px; font-weight:normal;color:#626262;opacity:1;}
+::-moz-placeholder {font-size:10px; font-weight:normal;color:#626262;opacity:1;}
+:-ms-input-placeholder {  font-size:10px; font-weight:normal;color:#626262;opacity:1;}
+/*INPUT NUMBER*/
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none; margin:0;}*/
+
+#enquiryform h1{color:#000 !important;}
+.formContent h3{color:#000;font-family: "WordMean Font V1"; font-size:18px;letter-spacing:3px; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.formContent input[type=text],input[type=number],input[type=email]{background:#e1e2e9; border:0px; padding:10px 1%; margin:2px 10px 12px 0px; width:98%; float:left; }
+.formContent input[type=text]:focus,input[type=number]:focus,input[type=email]:focus{outline:none; box-shadow:none; border:0px;}
+.formContent select{background:#e1e2e9; border:0px; padding:10px 10px; margin:2px 0px 12px 0px; width:100%; float:left;border:1px solid #939393; margin-right:3px;-webkit-border-radius: 0px; border:0px !important; 
+color:#626262;-webkit-appearance: none; font-size:10px; opacity:1; }
+.formContent input[type=text]:focus,input[type=number]:focus,input[type=email]:focus{background:#ffffff; outline:0px;}
+.formContent select:focus{outline:0px;}
+
+.bookBtn{ background:#eb212e; padding:10px; color:#fff; text-transform:uppercase; font-size:12px; border:0px; cursor:pointer;transition:background-color 0.5s ease; position:relative; }
+.bookBtn:hover{background:#000;}
+.bookBtn::before{content:''; position:absolute; right:10px; width:20px; height:20px; top:0px; background:url(../images/arrow.png) no-repeat;}
+.bookBtn:focus{ border:0px;outline:0px;} 
+/*ENQUIRY FORM STYLE END*/
+
+
+/*LET'S BEGIN HUNT STYLE*/
+.lethunt{width:70%; float:left;}
+.lethunt img{ width:100%;}
+.formContent{width:20%; margin:40px 0px; float:left; padding:0% 5%;}
+/*INETRIOR SECTION STYLE*/
+
+.whitebg{background:#ffffff;}
+
+
+
+/*EXTERIOR SECTION STYLE*/
+.exterior_txt_section{width:100%; float:left; text-align:center; padding:30px 0px; letter-spacing:3px; z-index:2; position:relative;}
+.exterior_txt_section img{ height:25px; margin-bottom:20px;}
+.exterior_car_section{width:100%; float:left; padding:1% 0px; position:relative;}
+.exterior_rotate_section{width:100%; float:left; text-align:center;}
+.exterior_bottom_section{width:100%; float:left; padding:4% 0px; text-align:center;}
+.extxt{ font-size:32px; color:#fff;font-family: "WordMean Font V1"; display:block; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+.exterior_car_section_nav{width:25%; float:left; padding-left:3%; position:absolute; left:0px; top:100px; z-index:2;}
+.exterior_car_section_nav ul{width:100%; float:lett;}
+.exterior_car_section_nav ul li{width:100%; text-transform:uppercase; color:#fff; font-size:15px; margin-bottom:30px; cursor:pointer;}
+.exterior_car_section_nav ul li sup{font-size:11px;}
+.activeNav{font-size:19px !important;  border-bottom:2px solid #fff;}
+
+.exterior_car{width:100%; float:left; text-align:left;}
+.ex_line{width:427px; height:23px; background:url(../images/ex_rotate_line.png) no-repeat; margin:auto; position:relative;}
+.ex_circle{width:31px; height:30px; background:url(../images/ex_rotate_circle.png) no-repeat; position:absolute; left:50%; margin-left:-15px; cursor:pointer;}
+
+.car_colors{width:100%; text-align:center; }
+
+.color_change_area{width:100%; margin:auto;}
+.color_change_area ul{float:left;}
+.color_change_area ul li{ float:left; cursor:pointer; margin-right:20px; padding-right:10px;background:url(../images/redline.png) no-repeat right top;}
+.color_change_area ul li:last-child{background:none; margin:0px;}
+.color_change_area ul li img:hover{opacity:.8;}
+
+/*SPECIFICATION TABLE STYLE START HERE*/
+.spec_header{ width:100%; float:left; text-align:center;}
+.spec_header h1{ font-size:32px; letter-spacing:3px;}
+.spec_panel{ width:100%; float:left; text-align:center; padding:10px 0px 0px 0px; position:relative;}
+
+.spec_sel_box{width:200px; float:left; text-align:center; margin-right:20px;}
+.spec_sel_box ul{width:100%; background:#fff; padding:0px 0px; display:none; margin-top:3px;}
+.spec_sel_box ul li{width:100%; color:#000; border-bottom:1px solid #333; padding:10px 0px; text-align:center; font-size:15px; cursor:pointer;}
+.spec_sel_box ul li:hover{ background:#F1F1F1;}
+
+.disel{}
+.petrol{ display:none;}
+
+.spec_sel_box span{color:#fff; padding-bottom:5px; }
+.spec_drop{ background:#fff; color:#000; padding:10px 20px; margin-top:10px; cursor:pointer;}
+.spec_drop img{ float:right; margin-top:5px;}
+.spec_sel_grp{ width:200px; margin:auto;}
+
+
+/*----- Accordion -----*/
+.accordion-section{ position:relative;}
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.accordion {overflow:hidden; padding:2% 10%;}
+.accordion-section-title { position:relative;
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-left:2px solid #eb212e;
+	background:rgba(255,255,255,0.75);
+	transition:all linear 0.15s;
+	font-size:16px;
+	text-align:left;
+	color:#000;
+	border-bottom:2px solid #000;
+}
+.accordion-section-title.active, .accordion-section-title:hover {background:rgba(255,255,255,0.95);text-decoration:none;}
+.accordion-section:last-child .accordion-section-title {border-bottom:none;}
+.accordion-section-content {padding:15px;display:none;background:rgba(255,255,255,0.95); width:100%; float:left;}
+
+
+
+
+
+
+/*ENGINE SECTION STYLE*/
+.engine_sec_top{width:100%; float:left; height:70%;}
+
+.engine_sec_left{width:50%; float:left; height:100%;}
+.engine_sec_left_top{width:100%; background:#ffffff; padding:5px; text-align:center}
+.engine_sec_left_top h1{color:#000; text-transform:uppercase;font-family: "WordMean Font V1"; font-size:52px; letter-spacing:4px; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.engine_sec_left_bot{width:100%; float:left; background:url(../images/engine_header.jpg) no-repeat; background-size:cover; background-position:center;}
+.engine_sec_left_bot img{width:100%;}
+
+.engine_sec_right{width:50%;float:left; height:100%;}
+.engine_panel{width:100%;float:left; height:50%;}
+.engine_panel_txt{width:50%; float:left; background:#eb212e; height:100%;}
+.engine_panel_txt h3{ text-transform:uppercase; color:#fff; font-size:22px; padding:20px;}
+.engine_panel_txt p{ color:#fff; font-size:14px; padding:0px 20px;}
+.engine_panel_img{ width:50%;float:left;}
+
+.engine_sec_bottom{width:100%; float:left; background:#ffffff; height:29%; padding-top:1%;}
+.engine_sec_box{width:25%; float:left; }
+.engine_sec_box img{width:100%;border-bottom:3px solid #eb212e;}
+
+.nomargin{margin-right:0px;width:25% !important}
+/*FEATURE SECTION STYLE*/
+
+
+/*GRADE SECTION STYLE*/
+.grade_header{width:100%; float:left; height:20%; text-align:center;}
+.grade_header h1{font-size:52px;}
+.grade_bottom{ width:90%; float:left; height:77%; margin:0px 5%;}
+
+.grade_box{width:24%; float:left; margin-right:1%; height:90%;}
+.grade_car{width:100%; float:left; background:rgba(79,84,89,.1);padding:8% 0px; border-top:2px solid #eb2532; text-align:center;}
+.grade_car img{ width:100%; max-width:305px;}
+.grade_txt{width:100%; float:left; background:rgba(255,255,255,.1);border-top:2px solid #eb2532; padding:3% 0px; height:80%; position:relative;}
+.grade_txt ul{ padding:30px 20px;}
+.grade_txt ul li{ color:#fff; font-weight:normal; font-size:14px;  float:left; width:100%; list-style-position:inside; line-height:22px; list-style:inside;}
+.grH{ position:absolute; top:10px; right:10px; font-family: "WordMean Font V1"; font-size:26px; color:#fff; overflow:hidden;  -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+
+.bg1{background:url(../images/bg1.png) no-repeat; background-size:cover;}
+
+
+/*GALLERY SECTION STYLE*/
+
+
+.gallery_container{width:100%; float:left;}
+.gallery_left{width:30%; float:left;}
+.gallery_left_header{width:100%; background:#d81e2a; padding:10px 0px; border-bottom:2px solid #fff; text-align:center; }
+.gallery_left_header h1{margin:0px; padding:20px 0px;}
+.gallery_left_bottom{width:100%; float:left;}
+.gallery_left_txtArea{ padding:5% 10%;}
+.gallery_left_txtArea h2{width:100%; color:#fff; font-size:26px;}
+.gallery_left_txtArea p{ color:#fff; margin:10px 0px; font-size:16px;}
+.gallery_left_txtArea a{color:#fff; margin:30px 0px; width:100%; float:left; text-transform:uppercase; letter-spacing:6px;}
+
+.galler_link_section{width:400px; float:left; margin-left:10%; margin-top:10%;}
+.arrow_left{width:9px; height:15px; background:url(../images/arrow_left.png) no-repeat; float:left; margin:10px 30px 0px 10px; cursor:pointer;}
+.arrow_left:hover{background:url(../images/arrow_left_active.png) no-repeat;}
+.numbers{float:left; width:150px;}
+.numbers div{width:30px; height:27px; padding-top:3px; float:left; margin:0px 10px 10px 0px; display:inline; color:#3d4146; cursor:pointer; border-radius:100%; text-align:center; border:2px solid #3d4146;}
+.numbers div:hover{color:#fff;border:2px solid #d81e2a;}
+.numactive{background:#d81e2a !important; color:#fff !important; border:0px !important;}
+.arrow_right{width:9px; height:15px; background:url(../images/arrow_right.png) no-repeat 0 0; float:left; margin:10px 0px 0px 0px;cursor:pointer;}
+.arrow_right:hover{background:url(../images/arrow_right_active.png) no-repeat;}
+
+.gallery_right{ width:70%; float:left;}
+.gallery_top_img{width:100%; float:left; text-align:center;}
+.gallery_top_img img{width:100%;}
+.gallery_bottom_img{width:100%; float:left;}
+.gallery_bottom_img img{width:50%; float:left;}
+.gallery_tvc{width:100%; float:left; overflow:hidden;}
+.gallery_tvc img{width:100%;}
+
+
+.galbg{ background:url(../images/gallery_1.jpg) no-repeat; background-size:cover; background-position:center;}
+.mainSlider{ float:left;overflow:hidden;}
+.gallery_slider{ float:left;}
+.gallery_container{ float:left;}
+
+.kkcontainer{ width:600px; overflow:hidden; position:relative;}
+.kkcontainer ul{width:2400px; float:left;}
+.kkcontainer ul li{ float:left; width:100%; width:600px;}
+#kk_ar_left{ position:absolute; top:50%; left:20px; cursor:pointer;}
+#kk_ar_left img{width:auto !important;}
+#kk_ar_right{ position:absolute; top:50%; right:20px; cursor:pointer;}
+#kk_ar_right img{width:auto !important;}
+
+.kkvideocontainer{width:600px; overflow:hidden; position:relative;}
+.kkvideocontainer ul{width:2400px; float:left;}
+.kkvideocontainer ul li{ float:left; width:300px;}
+#kk_v_left{ position:absolute; top:50%; left:20px; cursor:pointer;}
+#kk_v_left img{width:auto !important;}
+#kk_v_right{ position:absolute; top:50%; right:20px; cursor:pointer;}
+#kk_v_right img{width:auto !important;}
+
+/*ACCESSORIES SECTION START*/
+.access_top{width:100%; float:left; position:relative; height:60%; text-align:center; background:#ffffff;}
+.access_top h1{ font-size:32px; color:#000;}
+.access_top p{ font-size:18px; color:#000; padding:0px 10%;}
+.acc_bg_img{ position:absolute; bottom:0px;width:100%; height:100%; background:url(../images/acc_top.jpg) no-repeat; z-index:1;background-size: cover;background-position: center center;}
+.access_bottom{width:100%; float:left; height:40%; position:relative;}
+.access_box{width:20%; float:left; overflow:hidden; position:relative; margin-left:0%;}
+.access_box img{width:100%; max-width:100%; max-height:100%;}
+.redline{width:70px; height:4px; border-top:4px solid #eb212e;padding-bottom:20px; margin:auto; margin-top:40%;}
+.acc_shade{ position:absolute; top:0px; left:0px; background:rgba(0,0,0,.5); text-align:center; z-index:1; width:100%; height:100%; cursor:pointer;}
+.acc_shade:hover{ background:rgba(0,0,0,0); opacity:0;}
+.acc_txt span{ color:#fff; font-size:26px; font-family:'httpwhttpwordswithmeaning.org'; letter-spacing:3px; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+.acc_content{ background:rgba(0,0,0,.7); position:absolute; top:0px; left:0px; z-index:3; width:100%;overflow:hidden; }
+.acc_inner{width:0px; overflow:hidden; text-align:center; position:relative;}
+.closeacc{ position:absolute; top:0px; right:0px;}
+
+.bghed{background:#000; color:#fff; font-size:16px;}
+.sp_table{width:100%; float:left;}
+.sp_table_row{border-bottom:1px solid #333; display:block; padding:0px 0px;float:left; border-left:1px solid #333;}
+.sp_table_col{border-right:1px solid #333; float:left; text-align:center; padding:10px 0px;}
+.specTable{width:100%; float:left; background:#ffffff;}
+.specRow{width:100%; float:left; padding:5px 0px; border:1px solid #333;}
+.specCol{float:left; padding:0px 0px; text-align:center; font-size:12px;}
+.btop{border-top:1px solid #333;}
+
+#openallAcc{ position:absolute; top:15px; right:10%; cursor:pointer;}
+.plus{ position:absolute; right:10px; bottom:15px;}
+.minus{ position:absolute; right:10px; bottom:25px;}
+.dimenSec{width:100%; float:left; margin:30px 0px 0px;}
+.dimenBox{width:23%; padding:1%; float:left; text-align:left;}
+.dimenBox img{ margin-bottom:20px; width:100%; max-width:150px; max-height:100px;}
+.dimenBox h4{ font-weight:bold; font-size:17px; color:#000; margin:0px; padding:0px;}
+.dimenBox p{color:#000; font-size:13px; margin:0px; padding:0px;}
+
+
+/*SAFETY SECTION START*/
+.safety_header{ width:94%; float:left; height:12%; padding:1% 3%;}
+.safety_header h1{color:#000; padding:0px; margin:0px;webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.safety_mid{ width:100%; float:left; background:url(../images/safety_header.jpg) no-repeat; background-size:cover; height:30%; position:relative; min-height:300px;}
+.safety_mid_txt{ position:absolute;  bottom:20px; padding:0px 3%;}
+.safety_mid_txt h2{ font-size:22px; color:#fff;}
+.safety_mid_txt p{ font-size:16px; color:#fff; width:70%;}
+
+.safety_bottom{width:100%; float:left; background:#000000; height:40%; border-top:4px solid #fff;}
+.safety_box{width:25%; float:left; border-right:2px solid #eb212e; padding:0px 20px;}
+.safety_box_img{width:100%; float:left; text-align:center; padding:5% 0px;}
+.safety_box_img img{}
+.safety_box_txt{width:100%; float:left; margin:10px 0px;}
+.safety_box_txt h3{color:#fff; font-weight:bold; padding:10px 0px;}
+.safety_box_txt p{ font-size:16px; color:#fff; line-height:17px; opacity:.5; margin-bottom:5px;}
+.bordernone{border:0px !important;}
+
+
+
+/*FOOTER SECTION STAYLE START HERE*/
+footer{width:100%; float:left; padding:20px 0px; border-top:4px solid #fff;}
+.footerTop{width:100%; float:left;}
+.footerPanel{width:100%; float:left; padding:2% 0px 2% 0px; text-align:center;}
+.footerPanel h1{ color:#fff; font-size:52px; letter-spacing:3px;font-family: "WordMean Font V1"; -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.footerBtn{ background:#ffffff; border-bottom:2px solid #eb212e; padding:10px 10px 10px 30px; float:left; margin-right:10px; width:220px;}
+.footerBtn span{ float:left;font-size:17px; color:#000;}
+.footerBtn img{ float:right; padding:0px 10px; height:22px;}
+
+.givecallBtn{ background:#eb212e; color:#fff; letter-spacing:5px; font-size:16px; padding:10px 30px;}
+.footerBtn_container{ margin:auto; width:1080px;}
+.footerBottom{width:100%; border-top:2px solid #eb212e; float:left; margin:0px 0px; padding:10px 0px;     color: #fff;
+    text-align: center;
+    font-size: 15px;}
+
+/*RESPONSIVE HIDE ELEMENTS*/
+#mobilemenu{display:none;}
+.slicknav_menu{display:none;}
+.swiper-pagination-bullet{ opacity:1 !important; background:#fff ;}
+.add{width:100%; height:100%;}
+.scrollDown{position:fixed; bottom:50px; left:50%; margin-left:-20px;}
+
+.mob_ac_botton{display:none;}
+.access_bottom{ display:block;}
+#intiframe{ z-index:1 !important;}
+
+.homebg{ background:url(../images/homebg.png) no-repeat; background-position:center center; background-size:cover; background-attachment:fixed}
+
+.grd_txt_in{ position:relative; color:#fff; font-size:12px; text-align:center; width:100%;}
+
+.warenty_section{width:100%; float:left; padding:30px 0px; text-align:center;}
+.warenty_section p{ color:#fff;}
+.warenty_section img{width:150px;}
+/*________________________________________________ALL PAGE STYLE END HERE________________________________________________*/
+
+.swiper-slide{width:auto;}
+@media only screen and (min-width: 1000px) {
+/*	HEADER STYLE*/
+	nav li a{font-size:12px ;}
+	nav li{margin-right:1.3%;}
+	.honda_logo{width:10%;}
+	nav ul{width:680px;}
+	
+	.honda_logo img{}
+}
+
+@media only screen and (min-width: 1001px) {
+	/*	HEADER STYLE*/
+	nav li a{font-size:14px ;}
+	nav li{margin-right:1.5%;}
+	.honda_logo{width:11%;}
+	nav ul{width:850px;}
+
+/*NEW CSS ADDED*/
+h1{font-size:32px;}
+.safety_header{height:15%;}	
+p{margin:0px; padding:0px;}
+.safety_mid_txt h2{ margin:0px; padding:0px;}
+
+
+	
+/*FORM ELEMENT*/	
+.formContent h3{font-size:13px;}
+.formContent{margin:5px 0px;}
+	
+/*	ENGINE SECTION*/
+.engine_sec_left_top h1{font-size:30px; padding:10px 0px; margin:0px;}
+.engine_panel_txt h3{padding:10px 30px;}
+
+
+/*SPECIFICATION SECTION*/
+.spec_header h1{margin:10px 0px; padding:0px;}
+
+/*SAFETY SECTION*/
+.safety_box_img img{width:100%; max-width:130px;}
+.safety_box_txt h3{ font-size:14px; margin:0px; padding:0px;}
+.safety_box_txt p{font-size:12px;}
+.safety_mid{min-height:250px;}
+
+/*GRADE SECTION*/
+.grade_header h1{font-size:32px; margin:10px; padding:0px;}
+.grade_header{height:13%;}
+.grade_car img{width:70%;}
+
+/*ACCESSORIES SECTION*/
+.access_top h1{ margin:0px; padding:10px; 0px}
+.acc_shade span{font-size:20px;}
+.access_top p{ font-size:13px;}
+
+/*GALLERY SECTION*/
+.gallery_left_header{padding:0px;}
+
+/*FOOTER SECTION*/
+.footerPanel h1{font-size:32px;}
+.footerPanel h1 img{height:22px;}
+
+/*HONDA CONNECT SECTION*/
+.hondaconnect_hed h1{font-size:32px;}
+
+.car_colors img{width:400px;}
+.grade_txt ul li{ font-size:12px;}
+	
+.hondaconnect_content img{ width:90%;}
+	
+	.grade_box{height:100%;}
+	
+	.formContent{ padding:0% 5%;}
+	.exterior_car_section{padding:3% 0px;}
+}
+
+@media only screen and (min-width: 1400px) {
+	
+
+	
+	/*	HEADER STYLE*/
+nav li a{font-size:16px ;}
+nav li{margin-right:2%;}
+	
+nav ul{width:1000px;}
+	
+/*GRADE SECTION*/
+.grade_car img{width:100%;}
+
+/*SAFETY SECTION*/
+.safety_box_txt h3{ font-size:16px; margin:0px; padding:0px;}
+.safety_box_txt p{font-size:14px;}
+
+/*GRADE SEC*/
+.grade_txt ul li{ font-size:13px;}
+.access_top p{ font-size:14px;}
+
+
+.grade_box{height:100%;}
+
+	
+}
+@media only screen and (min-width: 1800px) {
+	/*	HEADER STYLE*/
+	nav li a{font-size:17px ;}
+	nav li{margin-right:3%;}
+	nav ul{width:1300px;}
+	
+		.formContent{ padding:2% 5% 0px 5%;}
+		
+/*	SLIDE SECTION*/
+.formContent h3{font-size:22px;}
+
+<!--EXTERIOR SECTION-->
+.extxt{font-size:52px;}
+.exterior_car{margin-bottom:80px;}
+
+/*ACCESSORIES SECTION*/
+.access_top h1{ font-size:52px;}
+.access_top p{ font-size:18px;}
+
+/*SAFETY SECTION*/
+.safety_mid{height:40%;}
+
+.safety_box_img  img{
+   max-width:230px;}
+   
+.safety_header{ height:12%;}  
+.safety_mid{ height:46%;} 
+.safety_bottom{height:42%;}
+
+.safety_box_txt h3{ font-size:18px; margin:0px; padding:0px;}
+.safety_box_txt p{font-size:16px; margin-top:10px;}
+
+/*GRADE SECTION*/
+.grade_car img{width:100%;}
+
+.grade_txt ul li{ font-size:15px;}
+
+/*HONDA CONNECT SECTION*/
+.hondaconnect_hed h1{font-size:52px;}
+.car_colors img{width:400px}
+.grade_box{height:96%;}
+}
+
+
+@media only screen and (max-width: 999px) {
+#mobilemenu{display:none;}
+#desktopmenu{display:none;}
+
+h1{margin:10px 0px; padding:0px;}
+h2{margin:10px 0px; padding:0px;}
+
+.mainContent{margin-top:30px;}
+
+/*HEADER SECTION STYLE START */
+header{ position:fixed; background:#000; z-index:20;}
+.slicknav_menu{display:block; position:fixed; top:10px; right:0px; z-index:3;width:100%;}
+.slicknav_menu ul{width:100%;}
+.slicknav_menu ul li a{color:#000;}
+.slicknav_nav{background:rgba(255,255,255,1);}
+.social{display:none;}
+.brv_logo{float:right; margin-right:60px;}
+.brv_logo img{width:100%;}
+.honda_logo{width:100px;}
+.honda_logo img{width:100%;}
+nav{ display:none;}
+.honda_logo{padding:0px 5%;}
+
+/*HOME SECTION STYLE*/
+.hometxtArea span{font-size:22px;}
+#home{height:400px;}
+
+/*SLIDING SECTION STYLE*/
+.slideG{width:100%; height:100px;}
+.slideG_inner img{width:100%;}
+.blackShade{background:rgba(0,0,0,.6);padding:0px;bottom:0px; height:50px; top:inherit;}
+.txtsec{ margin:0px; text-align:right; float:right; margin-right:20px;}
+.txtsec span{padding:0px; font-size:15px;}
+.whiteline{padding-bottom:5px; border-top:1px;}
+
+/*FORM SECTION STYLE*/
+.lethunt{width:100%;}
+.formContent{width:90%; margin:10px 0px;}
+
+
+/*INTERIOR SECTION*/
+.activeNav{ font-size:14px !important;}
+
+
+/*EXTERIOR SECTION*/
+.exterior_txt_section img{ height:15px; margin-bottom:10px;}
+.extxt{font-size:22px;}
+.exterior_car_section_nav{width:100%; position:relative; top:0px;}
+.exterior_car{width:100%;}
+.exterior_car img{width:100%;}
+.exterior_car_section_nav ul li{width:30%; font-size:13px; float:left}
+
+.ex_line{width:250px; height:13px; background:url(../images/mobile/ex_rotate_line_mobile.png) no-repeat; margin:auto; position:relative;}
+.ex_circle{width:20px; height:19px; background:url(../images/mobile/ex_rotate_circle_mobile.png) no-repeat; position:absolute; left:50%; margin-left:-15px; cursor:pointer;}
+.exterior_bottom_section img{width:70%;}
+.car_colors img{width:183px !important; margin:auto; height:150px;}
+
+.color_change_area ul li{background:none; margin-right:10px; padding:0px;}
+.color_change_area ul{width:200px; margin:auto; float:inherit;}
+.color_change_area ul li img{width:25px;}
+
+
+
+/*ENGINE SECTION*/
+.engine_sec_left{width:100%;}
+.engine_sec_right{width:100%;}
+.engine_sec_left_top h1{font-size:22px;}
+.engine_sec_box{width:100%;}
+.nomargin{width:100% !important;}
+.engine_sec_left_bot{width:100%; float:left; background:url(../images/mobile/engine_header.jpg) no-repeat; background-size:cover; background-position:center; height:200px;}
+.engine_panel_img{width:100%;}
+.engine_panel_txt{width:100%;}
+.engine_sec_left_top{padding:5px 0px;}
+
+
+/*SAFETY SECTION*/
+.safety_box{width:96%; padding:0px 2%; border-right:0px;}
+.safety_mid_txt h2{ font-size:14px;}
+.safety_mid_txt p{ font-size:12px;}
+.safety_box_img img{height:110px;}
+.safety_box_txt h3{padding:0px;}
+.safety_box_txt p{ font-size:13px;}
+
+
+/*GRADE SECTION*/
+.grade_header h1{font-size:22px; }
+.grade_box{width:100%; margin:0px;}
+.grade_bottom{ padding:0px;}
+.grH{right:55px;}
+
+/*ACCESSORIES SECTION*/
+.access_top{height:300px;}
+.access_top h1{ font-size:16px;}
+.access_top p{ font-size:12px;}
+.access_bottom{ height:150px;}
+.access_box{width:100%; margin:0px; height:auto !important;}
+.acc_shade span{font-size:14px;}
+.redline{margin-top:30px; padding-bottom:0px;}
+.acc_bg_img{ background:url(../images/mobile/acc_top.jpg) no-repeat;background-size: cover;background-position: center center;}
+
+
+/*SPECIFICATION SECTION*/
+.spec_sel_grp{width:200px;}
+.givecallBtn{font-size:13px; letter-spacing:3px; padding:10px 10px;}
+.spec_panel{min-height:50px;}
+
+.dimenBox h4{ font-size:13px;}
+
+/*GALLERY SECTION*/
+.gallery_left{width:100%; float:left;}
+.gallery_left_header h1{ padding:0px 0px; margin:0px; font-size:16px;} 
+.gallery_left_txtArea h2{padding:5px 0px; margin:0px; font-size:18px;}
+.gallery_left_txtArea p{font-size:13px;}
+.gallery_left_txtArea a{ letter-spacing:3px; margin:10px;}
+.gallery_right{width:100%;}
+
+
+/*FOOTER SECTION*/
+.footerPanel h1{font-size:22px;}
+.footerPanel h1 img{height:15px; margin-top:10px;}
+.footerBtn{display:block; padding:10px 0px; width:100%; margin-bottom:5px;}
+.footerBtn span{margin-left:10px;}
+.footerBtn img{margin-right:10px;}
+.footerPanel{min-height:40px;}
+.footerBtn_container{width:100%;}
+.footerBottom{ font-size:13px;}
+.hometxtArea{ position:relative;}
+
+/*HONDA CONNECT SECTION*/
+.hondaconnect_hed h1{font-size:14px;}
+.knowmore{font-size:9px; padding:2px 4px; margin-left:-30px;}
+
+.sp_table_row{ font-size:11px;}
+.scrollDown{ display:none;}
+.slicknav_menu{ z-index:23;}
+
+.acc_shade{ height:60px; bottom:0px; top:inherit;}
+.mob_ac_botton{width:100%;}
+.mob_ac_botton img{width:100%;}
+.mob_ac_botton{ display:block;}
+.access_bottom{ display:none;}
+
+#kk_ar_right img{width:15px !important;}
+#kk_ar_left img{width:15px !important;}
+
+#intiframe{ z-index:1 !important; margin-top:180px;}
+.black{ color:#fff !important;}
+#exterior{ height:500px;}
+}
+
+
